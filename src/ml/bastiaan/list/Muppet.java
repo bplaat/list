@@ -27,6 +27,11 @@ public class Muppet {
         next = null;
     }
 
+    // A method the returns a copy of it self
+    public Muppet copy() {
+        return new Muppet(name, age);
+    }
+
     // A method to get the muppets name
     public String getName() {
         return name;

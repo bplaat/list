@@ -30,6 +30,7 @@ public class App {
 
     // A method that runs the linked list tests
     private void runLinkedListTests() {
+        // Do the first linked list class test
         Muppet animal = new Muppet("Animal", 9);
         Muppet beaker = new Muppet("Beaker", 4);
         Muppet gonzo = new Muppet("Gonzo", 21);
@@ -41,6 +42,7 @@ public class App {
         System.out.println(linkedList.pop(0));
         printLists();
 
+        // Do the second linked list class test
         System.out.println("\n### LinkedList Test 2 ###");
         linkedList.push(animal);
         linkedList.push(beaker);
@@ -53,6 +55,7 @@ public class App {
         // Good answer:
         // Linked List: Animal, Beaker, Gonzo, Kermit, Miss Piggy, Swedish Chef
 
+        // Do the third linked list class test
         System.out.println("\n### LinkedList Test 3 ###");
         linkedList.push(linkedList.pop("Swedish Chef"), 0);
         printLists();
@@ -63,10 +66,12 @@ public class App {
 
     // A method that runs the stack tests
     private void runStackTests() {
+        // Do the first stack class test
         System.out.println("\n### Stack Test 1 ###");
         System.out.println(stack.pop());
         printLists();
 
+        // Do the second stack class test
         System.out.println("\n### Stack Test 2 ###");
         stack.push(linkedList.pop("Kermit"));
         stack.push(linkedList.pop("Beaker"));
@@ -80,10 +85,12 @@ public class App {
 
     // A method that runs the queue tests
     private void runQueueTests() {
+        // Do the first queue class test
         System.out.println("\n### Queue Test 1 ###");
         System.out.println(queue.pop());
         printLists();
 
+        // Do the second queue class test
         System.out.println("\n### Queue Test 2 ###");
         queue.push(linkedList.pop("Gonzo"));
         queue.push(linkedList.pop("Miss Piggy"));
@@ -95,6 +102,7 @@ public class App {
         // Stack: Kermit, Beaker, Swedish Chef
         // Queue: Gonzo, Miss Piggy, Animal
 
+        // Do the third queue class test
         System.out.println("\n### Queue Test 3 ###");
         linkedList.push(queue.pop(), 1);
         linkedList.push(queue.pop(), 1);
